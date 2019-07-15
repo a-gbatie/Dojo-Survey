@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Dojo Survey</title>
+    <style>
+        div {
+            font-size: 16px;
+            text-align: justify;
+        }
+        .btn {
+            float: right;
+        }
+    </style>
+</head>
+    <body>
+        <div class="container">
+            <h5><u>Submitted Info</u></h5>
+            <br>
+            <p>Name: @ViewBag.Name</p>
+            <p>Dojo Location: @ViewBag.Location</p>
+            <p>Favorite Language: @ViewBag.Language</p>
+            <p>Comment: @ViewBag.Comment</p>
+            <input type="submit" class="btn btn-primary" value="Go Back">
+        </div>
+    </body>
+</html>
